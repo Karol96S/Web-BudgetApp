@@ -1,5 +1,11 @@
 body {
+    height: 100vh;
+    padding: 0;
     margin: 0;
+}
+
+html {
+    background-image: url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
 }
 
 img #background {
@@ -35,16 +41,20 @@ div#citation {
 
 header {
     display: flex;
-    background-color: #0b1826; /*black jest lepszy?*/
+    background-color: #0b1826;
+    /*black jest lepszy?*/
     /* rgb(31, 30, 30); */
     flex-direction: column;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: white;
 }
 
-h1, h2 {
+h1,
+h2 {
     align-self: center;
 }
 
@@ -66,23 +76,21 @@ h4 {
 }
 
 h1 {
-   margin: 0.5rem;
-   font-family: 'Times New Roman',serif;
-   letter-spacing: 0.1rem;
-   font-size: 3rem;
-   font-weight: bold;
-   background-image: linear-gradient(
-	to right,
-	#462523 0,
-	#cb9b51 22%, 
-	#f6e27a 45%,
-	#f6f2c0 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-   color:transparent;
-   -webkit-background-clip:text;
+    margin: 0.5rem;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right,
+            #462523 0,
+            #cb9b51 22%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 li {
@@ -94,28 +102,28 @@ ul li::marker {
     color: green;
     font-weight: bold;
     font-size: 1.2rem;
-  }
-
-.authorsThoughts {
-    font-family: 'Roboto' , serif;
 }
 
-.authorsThoughts p{
+.authorsThoughts {
+    font-family: 'Roboto', serif;
+}
+
+.authorsThoughts p {
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
     margin-bottom: 0rem;
 }
+
 .bottomContent {
-    position: absolute;
-    top: 25%;
+    margin-top: 3%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.bottomContent > div {
+.bottomContent>div {
     display: flex;
     width: 48rem;
     height: 20rem;
@@ -128,12 +136,12 @@ ul li::marker {
     border-width: 2px;
 }
 
-.bottomContent > div > h4 {
+.bottomContent>div>h4 {
     font-size: 1.7rem;
     margin: 1rem 4rem 2rem 4rem;
 }
 
-.bottomContent > div > p {
+.bottomContent>div>p {
     font-size: 1.4rem;
     margin-top: 0rem 4rem 1rem 4rem;
 }
@@ -150,11 +158,12 @@ nav {
     width: 48rem;
 }
 
-nav > div {
+nav>div {
     width: 8rem;
 }
 
-.login p, .register p {
+.login p,
+.register p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +190,7 @@ button {
     border-radius: 10px;
 }
 
-button > img {
+button>img {
     align-self: center;
     margin: 0;
     padding-left: 1rem;
@@ -198,4 +207,102 @@ button:hover {
 
 .register button {
     background-color: rgb(22, 85, 85);
+}
+
+/*od tad zaczynaja sie zmiany dla Registry */
+.registrySpace {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+}
+
+section.registrySpace {
+    display: flex;
+    position: static;
+    height: auto;
+    width: 36rem;
+    border-radius: 5px;
+}
+
+.registrySpace h1 {
+    color: rgb(104, 73, 37);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4rem;
+}
+
+div#registryMainText {
+width: 100%;
+display: flex;
+justify-content: center;
+background-image: linear-gradient(to right top, #cb9b51, #d5b16a, #dfc786, #eadda2, #f6f2c0);
+border-radius: 5px 5px 0 0;
+margin-bottom: 1.8rem;
+}
+
+.registrySpace .info {
+    margin: 1rem;
+    align-self: center;
+}
+
+.registrySpace img {
+    background-color: rgb(221, 220, 220);
+}
+
+div.info {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 1rem;
+    width: 14rem;
+}
+
+div.info>img {
+    border: solid;
+    border-color: grey;
+    border-width: 1px;
+    height: 1.5rem;
+    padding: 0;
+    width: 10%;
+}
+
+div.info>input {
+    border: solid;
+    border-color: grey;
+    border-width: 1px;
+    height: 1.5rem;
+    width: 85%;
+    padding: 0 0 0 0.5rem;
+}
+
+#buttonSpacing {
+    height: 1rem;
+}
+
+.positive {
+    background-color: rgb(22, 85, 85);
+    height: 2.7rem;
+    width: 14rem;
+    justify-self: center;
+    margin-bottom: 8rem;
+}
+
+.negative {
+    background-color: rgb(179, 79, 79);
+    width: 7rem;
+    height: 2.7rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    align-self: flex-end
+}
+
+.buttons nav {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+#backgroundDarkenedMode {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
 }
