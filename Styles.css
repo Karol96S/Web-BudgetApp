@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+}
+
+img #background {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+img#coinstack {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+    filter: invert(64%) sepia(57%) saturate(410%) hue-rotate(357deg) brightness(91%) contrast(84%);
+}
+
+div#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#citation {
+    align-self: center;
+}
+
+.listItems {
+    height: 1.1rem;
+    width: auto;
+    margin-left: 0.5rem;
+}
+
+header {
+    display: flex;
+    background-color: #0b1826; /*black jest lepszy?*/
+    /* rgb(31, 30, 30); */
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+h1, h2 {
+    align-self: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0.7rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: rgb(170, 168, 168);
+    transform: skew(-0.25rad);
+}
+
+h4 {
+    font-family: 'Merienda', cursive;
+}
+
+h1 {
+   margin: 0.5rem;
+   font-family: 'Times New Roman',serif;
+   letter-spacing: 0.1rem;
+   font-size: 3rem;
+   font-weight: bold;
+   background-image: linear-gradient(
+	to right,
+	#462523 0,
+	#cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+   color:transparent;
+   -webkit-background-clip:text;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+ul li::marker {
+    content: '✓';
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+.authorsThoughts {
+    font-family: 'Roboto' , serif;
+}
+
+.authorsThoughts p{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+.bottomContent {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomContent > div {
+    display: flex;
+    width: 48rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border-color: black;
+    border: solid;
+    border-width: 2px;
+}
+
+.bottomContent > div > h4 {
+    font-size: 1.7rem;
+    margin: 1rem 4rem 2rem 4rem;
+}
+
+.bottomContent > div > p {
+    font-size: 1.4rem;
+    margin-top: 0rem 4rem 1rem 4rem;
+}
+
+.authorsThoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 48rem;
+}
+
+nav > div {
+    width: 8rem;
+}
+
+.login p, .register p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 24, 38);
+    border-radius: 3px;
+    color: white;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.5rem;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    height: 2.8rem;
+    width: 350px;
+    letter-spacing: 0.1rem;
+}
+
+button {
+    width: 350px;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button > img {
+    align-self: center;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+button:hover {
+    transform: translateY(0.05rem);
+    cursor: pointer;
+}
+
+.login button {
+    background-color: green;
+}
+
+.register button {
+    background-color: rgb(22, 85, 85);
+}
