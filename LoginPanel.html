@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Login</title>
     <link rel="stylesheet" href="Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +31,8 @@
             <section class="workingSpace">
                 <section class="bottomContent">
                     <section class="registrySpace">
-                        <div id="registryMainText">
-                        <h1>Rejestracja</h1>
-                        </div>
-                        <div class="info">
-                            <img src="./obrazki/baseline_person_black_24dp.png" alt="icon of a person">
-                            <input type="text" class="registerInfo" placeholder="Imię" required>
+                        <div id="loginMainText">
+                        <h1>Logowanie</h1>
                         </div>
                         <div class="info">
                             <img src="./obrazki/outline_email_black_24dp.png" alt="icon of an envelope">
@@ -46,15 +42,15 @@
                             <img src="./obrazki/outline_key_black_24dp.png" alt="icon of a key">
                             <input type="password" class="registerInfo" placeholder="Hasło" required>
                         </div>
-                        <div class="info">
-                            <img src="./obrazki/outline_key_black_24dp.png" alt="icon of a key">
-                            <input type="password" class="registerInfo" placeholder="Powtórz Hasło" required>
-
+                        <div class="rememberUser">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Zapamiętaj mnie</label>
+                    </div>
                         </div>
                         <div id="buttonSpacing"></div>
                         <div class="buttons">
                             <nav>
-                                <button class="positive">Zarejestruj</button>
+                                <button class="positiveLogin">Zaloguj się</button>
                                 <button class="negative">&#60;&#60; Wróć</button>
                             </nav>
                         </div>

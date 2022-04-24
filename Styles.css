@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    background-image: url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
 }
 
 img #background {
@@ -170,12 +170,15 @@ nav>div {
     background-color: rgb(11, 24, 38);
     border-radius: 3px;
     color: white;
+    border: solid;
+    border-width: 0.5px;
+    border-color: black;
     margin: 0 0 0.4rem 0;
     font-size: 1.5rem;
     font-family: 'Lobster', cursive;
     font-weight: bold;
     height: 2.8rem;
-    width: 350px;
+    width: 348px;
     letter-spacing: 0.1rem;
 }
 
@@ -225,7 +228,7 @@ section.registrySpace {
 }
 
 .registrySpace h1 {
-    color: rgb(104, 73, 37);
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 2.4rem;
 }
@@ -234,8 +237,7 @@ div#registryMainText {
 width: 100%;
 display: flex;
 justify-content: center;
-background-image: linear-gradient(to right top, #cb9b51, #d5b16a, #dfc786, #eadda2, #f6f2c0);
-border-radius: 5px 5px 0 0;
+background-image: linear-gradient(to right top, #0f3239, #103a41, #114348, #134c4f, #165555);border-radius: 5px 5px 0 0;
 margin-bottom: 1.8rem;
 }
 
@@ -305,4 +307,30 @@ div.info>input {
 
 #backgroundDarkenedMode {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
+}
+
+/*login styles ponizej*/
+
+div#loginMainText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #0a7a1d, #31891c, #4d9819, #67a715, #82b510);
+    margin-bottom: 1.8rem;
+    border-radius: 5px 5px 0 0;
+    }
+
+.positiveLogin {
+    background-image: linear-gradient(to right top, #0a7a1d, #31891c, #4d9819, #67a715, #82b510);
+        height: 2.7rem;
+        width: 14rem;
+        justify-self: center;
+        margin-bottom: 8rem;
+    }
+
+.rememberUser {
+    align-self: center;
+    margin-right: 6.4rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
 }
