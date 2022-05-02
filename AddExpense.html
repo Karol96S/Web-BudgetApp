@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" id="homePage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Menu</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <header>
+                <div id="logo">
+                    <img id="coinstack" src="./obrazki/coin-stack.png" alt="image of stacked coins">
+                    <h1>Budget Manager.com</h1>
+                </div>
+                <div id="citation">
+                    <h2><cite>Jesteśmy tym, co w swoim życiu powtarzamy. Doskonałość nie jest jednorazowym aktem, lecz
+                            nawykiem.</cite></h2>
+                    <h3>~ Arystoteles</h3>
+                </div>
+            </header>
+            <section class="workingSpace">
+                <nav id="toolbar">
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_home_black_24dp.png" alt="home icon"></span> Strona
+                        Główna</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_add_card_black_24dp.png"
+                                alt="credit card plus icon"></span>Dodaj Przychód</button>
+                    <button class="toolbarChoice" id="expensesButtonToggled"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_shopping_bag_black_24dp.png"
+                                alt="shopping bag icon"></span>Dodaj Wydatek</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_query_stats_black_24dp.png"
+                                alt="chart with magnifying glass icon"></span>Sprawdź Bilans</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_settings_black_24dp.png"
+                                alt="settings icon"></span>Ustawienia</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_logout_black_24dp.png" alt="logout icon"></span>Wyloguj
+                        Się</button>
+                    <div></div>
+                    <div class="toolbarChoice">Zalogowany jako:</div>
+                </nav>
+                <section class="expense">
+                    <div class="expenseMenu">
+                        <h2>- Wprowadź Wydatek -</h2>
+                        <div class="expenseAndIncomeInfo">
+                            <label for="ExpenseAmount">Kwota:</label>
+                            <input type="number" id="ExpenseAmount" placeholder="Podaj kwotę w PLN" required>
+                        </div>
+                        <div class="expenseAndIncomeInfo">
+                            <label for="">Data:</label>
+                            <input type="date" id="date" placeholder="Data" required>
+                        </div>
+                        <div class="expenseAndIncomeInfo">
+                            <legend>Sposób płatności:</legend>
+                                <div class="singlePaymentsMethodsSection">
+                                    <input type="radio" id="gotowka" name="paymentMethods" value="gotowka" required>
+                                    <label for="gotowka" class="paymentMethods">Gotówka</label>
+                                </div>
+                                <div class="singlePaymentsMethodsSection">
+                                    <input type="radio" id="kartaDebetowa" name="paymentMethods" value="kartaDebetowa">
+                                    <label for="kartaDebetowa" class="paymentMethods">Karta Debetowa</label>
+                                </div>
+                                <div class="singlePaymentsMethodsSection">
+                                    <input type="radio" id="kartaKredytowa" name="paymentMethods" value="kartaKredytowa">
+                                    <label for="kartaKredytowa" class="paymentMethods">Karta Kredytowa</label>
+                                </div>
+                        </div>
+                        <div class="expenseAndIncomeInfo">
+                            <legend id="category">Kategoria:</legend>
+                                <section class="typeOfExpense">
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="jedzenie" name="categoryOfExpense" value="jedzenie" required>
+                            <label for="jedzenie" class="categoryOfExpense">Jedzenie</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="mieszkanie" name="categoryOfExpense" value="mieszkanie">
+                            <label for="mieszkanie" class="categoryOfExpense">Mieszkanie</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="transport" name="categoryOfExpense" value="transport">
+                            <label for="transport" class="categoryOfExpense">Transport</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="telekomunikacja" name="categoryOfExpense" value="telekomunikacja">
+                            <label for="telekomunikacja" class="categoryOfExpense">Telekomunikacja</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="opiekaZdrowotna" name="categoryOfExpense" value="opiekaZdrowotna">
+                            <label for="opiekaZdrowotna" class="categoryOfExpense">Opieka Zdrowotna</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="ubranie" name="categoryOfExpense" value="ubranie">
+                            <label for="ubranie" class="categoryOfExpense">Ubranie</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="higiena" name="categoryOfExpense" value="higiena">
+                            <label for="higiena" class="categoryOfExpense">Higiena</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="dzieci" name="categoryOfExpense" value="dzieci">
+                            <label for="dzieci" class="categoryOfExpense">Dzieci</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="rozrywka" name="categoryOfExpense" value="rozrywka">
+                            <label for="rozrywka" class="categoryOfExpense">Rozrywka</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="wycieczka" name="categoryOfExpense" value="wycieczka">
+                            <label for="wycieczka" class="categoryOfExpense">Wycieczka</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="szkolenia" name="categoryOfExpense" value="szkolenia">
+                            <label for="szkolenia" class="categoryOfExpense">Szkolenia</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="ksiazki" name="categoryOfExpense" value="ksiazki">
+                            <label for="ksiazki" class="categoryOfExpense">Książki</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="oszczednosci" name="categoryOfExpense" value="oszczednosci">
+                            <label for="oszczednosci" class="categoryOfExpense">Oszczędności</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="emerytura" name="categoryOfExpense" value="emerytura">
+                            <label for="emerytura" class="categoryOfExpense" id="retirement">Na złotą jesień, czyli emeryturę</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="dlugi" name="categoryOfExpense" value="dlugi">
+                            <label for="dlugi" class="categoryOfExpense">Spłata Długów</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="darowizna" name="categoryOfExpense" value="darowizna">
+                            <label for="darowizna" class="categoryOfExpense">Darowizna</label>
+                                </div>
+                                <div class="singleExpenseTypeSection">
+                            <input type="radio" id="inne" name="categoryOfExpense" value="inne">
+                            <label for="inne" class="categoryOfExpense">Inne Wydatki</label>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="expenseAndIncomeInfo">
+                            <label for="comment">Komentarz (opcjonalnie):</label>
+                            <input type="text" id="comment" placeholder="">
+                        </div>
+                        <div class="buttons">
+                            <nav>
+                                <button class="positiveLogin">Dodaj Wydatek</button>
+                                <button class="negative">&#60;&#60; Wróć</button>
+                            </nav>
+                        </div>
+                </section>
+            </section>
+        </form>
+</body>
+</main>
+
+</html>

@@ -401,6 +401,7 @@ div#loginMainText {
     background-image: url(./obrazki/homePageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     margin-top: 0;
     padding-top: 1.1%;
@@ -440,4 +441,146 @@ p.stepByStep {
     font-size: 1.5rem;
     font-family: Roboto;
     color: white;
+}
+
+/* Expense Menu below */
+
+.expense {
+    background-image: url(./obrazki/homePageBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0;
+    padding-top: 1.1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expenseMenu {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.expenseMenu h2 {
+    color: white;
+    background-image: linear-gradient(to bottom, #f44848, #db3a38, #c22c29, #aa1d1a, #920b0b);
+    font-family: Roboto, serif;
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem 0 0.8rem 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.expenseMenu label, legend {
+    display: flex;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    width: 11rem;
+    height: 1rem;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label.paymentMethods, label.categoryOfExpense {
+    color: black;
+    font-size: 0.95rem;
+}
+
+legend {
+    margin-right: 1rem;
+}
+
+legend#category {
+    display: flex;
+    align-self: flex-start;
+}
+
+div.expenseAndIncomeInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 6rem 0.5rem 1rem;
+}
+
+label#retirement {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.expenseMenu input {
+    height: 1.4rem;
+    width: 60%;
+    padding: 2px 1px 2px 1px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+.expenseMenu input[type=radio] {
+    width: auto;
+    align-self: center;
+    align-items: center;
+}
+
+label.paymentMethods {
+    width: auto;
+    margin-right: 1rem;
+    margin-left: 0.2rem;
+}
+
+.singlePaymentsMethodsSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.typeOfExpense {
+    display: flex;
+    flex-direction: column;
+}
+
+section.typeOfExpense {
+    display: flex;
+    flex-direction: column;
+}
+
+div.singleExpenseTypeSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6rem 0rem 1rem;
+}
+
+label.categoryOfExpense {
+    justify-content: left;
+    padding-left: 1rem;
+}
+
+.expense .buttons > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.expense .positiveLogin {
+    width: 51.5%;
+    margin-bottom: 2rem;
+    margin-left: 9rem;
+    justify-self: right;
 }
