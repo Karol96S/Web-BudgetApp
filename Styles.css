@@ -579,8 +579,138 @@ label.categoryOfExpense {
 }
 
 .expense .positiveLogin {
-    width: 51.5%;
+    width: 51%;
     margin-bottom: 2rem;
-    margin-left: 9rem;
+    margin-left: 8.4rem;
     justify-self: right;
+}
+
+/* Incomes menu below */
+
+.income {
+    background-image: url(./obrazki/homePageBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0;
+    padding-top: 1.1%;
+    width: 100%;
+    height: 748px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.incomeMenu {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.incomeMenu h2 {
+    color: white;
+    background-image: linear-gradient(to top, #18720f, #217d10, #2a8811, #349411, #3d9f11);    
+    font-family: Roboto, serif;
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem 0 0.8rem 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.incomeMenu label, legend {
+    display: flex;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    width: 11rem;
+    height: 1rem;
+    justify-content: right;
+    align-items: center;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label.categoryOfIncome {
+    color: black;
+    font-size: 0.95rem;
+}
+
+legend {
+    margin-right: 1rem;
+}
+
+legend#categoryIncomeMenu {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 1.16rem;
+}
+
+.incomeMenu input {
+    height: 1.4rem;
+    width: 60%;
+    padding: 2px 1px 2px 1px;
+    margin: 0;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: grey;
+}
+
+.incomeMenu input[type=radio] {
+    width: auto;
+    align-self: center;
+    align-items: center;
+}
+
+.typeOfIncome {
+    display: flex;
+    flex-direction: column;
+}
+
+section.typeOfIncome {
+    display: flex;
+    flex-direction: column;
+}
+
+div.singleIncomeTypeSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 6rem 0rem 1rem;
+}
+
+label.categoryOfIncome {
+    justify-content: left;
+    padding-left: 1rem;
+}
+
+.income .buttons > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.income .positiveLogin {
+    width: 51%;
+    margin-bottom: 2rem;
+    margin-left: 8.4rem;
+    justify-self: right;
+}
+
+.income div.expenseAndIncomeInfo {
+    padding-bottom: 1rem;
+}
+
+.income button.positiveLogin {
+    margin-left: 7.5rem;
+    width: 50.6%;
 }
