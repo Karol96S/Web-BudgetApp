@@ -758,21 +758,10 @@ section.upperPanel {
     margin: 0;
 }
 
-/*.upperPanel select {
-    width: 20%;
-    height: auto;
-    background: none;
-    color: white;
-    font-family: 'Roboto';
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    border: none;
-} */
-
 select {
     width: 20%;
     height: 5%;
+    color: rgb(63, 63, 63);
     background-color: white;
     border: thin solid grey;
     border-radius: 4px;
@@ -807,6 +796,7 @@ select {
   }
   
   select:focus {
+      color: rgb(63, 63, 63);
     background-image:
       linear-gradient(45deg, white 50%, transparent 50%),
       linear-gradient(135deg, transparent 50%, white 50%),
@@ -822,6 +812,11 @@ select {
     background-repeat: no-repeat;
     border-color: green;
     outline: 0;
+  }
+
+  option {
+      color: black;
+      font-weight: bold;
   }
 
 section.generalPanelsInfo {
@@ -922,5 +917,55 @@ tfoot td:nth-of-type(1) {
     color: rgb(83, 12, 10);
 }
 
+footer {
+    background-color: #dee5ec;
+    border: solid 5px rgb(73, 106, 156);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    margin: 1rem 0 2rem 0;
+}
+
+footer h2 {
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Adamina', serif;
+    letter-spacing: 0.1rem;
+}
+
+footer h2:nth-of-type(2) {
+    font-size: 1rem;
+}
+
+footer p:nth-of-type(1) {
+    color: rgb(15, 85, 15);
+    font-size: 1.3rem;
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+footer img {
+    padding: 0;
+    margin: 0;
+    height: 2.2rem;
+    width: auto;
+    margin-top: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+footer p, footer h2 {
+    display: flex;
+    justify-content: center;
+}
+
+div#balanceSummary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
