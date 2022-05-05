@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" id="homePage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Sheet</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Bebas+Neue&family=Lato&family=Lobster&family=Merienda:wght@400;700&family=Oswald&family=Poppins&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <header>
+                <div id="logo">
+                    <img id="coinstack" src="./obrazki/coin-stack.png" alt="image of stacked coins">
+                    <h1>Budget Manager.com</h1>
+                </div>
+                <div id="citation">
+                    <h2><cite>Jesteśmy tym, co w swoim życiu powtarzamy. Doskonałość nie jest jednorazowym aktem, lecz
+                            nawykiem.</cite></h2>
+                    <h3>~ Arystoteles</h3>
+                </div>
+            </header>
+            <section class="workingSpace">
+                <nav id="toolbar">
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_home_black_24dp.png" alt="home icon"></span> Strona
+                        Główna</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_add_card_black_24dp.png"
+                                alt="credit card plus icon"></span>Dodaj Przychód</button>
+                    <button class="toolbarChoice" id="expensesButtonToggled"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_shopping_bag_black_24dp.png"
+                                alt="shopping bag icon"></span>Dodaj Wydatek</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_query_stats_black_24dp.png"
+                                alt="chart with magnifying glass icon"></span>Sprawdź Bilans</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_settings_black_24dp.png"
+                                alt="settings icon"></span>Ustawienia</button>
+                    <button class="toolbarChoice"><span><img class="toolbarIcons"
+                                src="./obrazki/baseline_logout_black_24dp.png" alt="logout icon"></span>Wyloguj
+                        Się</button>
+                    <div></div>
+                    <div class="toolbarChoice">Zalogowany jako:</div>
+                </nav>
+                <section class="balanceSheet">
+                    <section class="upperPanel">
+                        <h2>Bilans za okres: &nbsp; 10.08.2012 - 22.05.2015</h2>
+                        <select name="date" id="date">
+                            <option value="currentMonth">Bieżący miesiąc</option>
+                            <option value="lastMonth">Poprzedni miesiąc</option>
+                            <option value="custom">Niestandardowy</option>
+                        </select>
+                    </section>
+                    <section class="generalPanelsInfo">
+                        <section class="incomesExpensesTableContainer">
+                            <table id="incomesTable">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Przychód Dla Poszczególnych Kategorii</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="positionNumber">Nr. pozycji</th>
+                                        <th>Kategoria</th>
+                                        <th>Wartość</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Wynagrodzenie</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Odsetki bankowe</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Sprzedaż na allegro</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Inne</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="active-row">
+                                        <td colspan="2">SUMA PRZYCHODÓW</td>
+                                        <td>1 PLN</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </section>
+                        <section class="incomesExpensesTableContainer">
+                            <table id="expensesTable">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Wydatki Dla Poszczególnych Kategorii</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="positionNumber">Nr. pozycji</th>
+                                        <th>Kategoria</th>
+                                        <th>Wartość</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>Jedzenie</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>Mieszkanie</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>Transport</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>Telekomunikacja</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.</td>
+                                        <td>Opieka zdrowotna</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6.</td>
+                                        <td>Ubranie</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7.</td>
+                                        <td>Higiena</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8.</td>
+                                        <td>Dzieci</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9.</td>
+                                        <td>Rozrywka</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.</td>
+                                        <td>Wycieczka</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.</td>
+                                        <td>Szkolenia</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.</td>
+                                        <td>Książki</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13.</td>
+                                        <td>Oszczędności</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14.</td>
+                                        <td>Na złotą jesień, czyli emeryturę</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.</td>
+                                        <td>Spłata długów</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16.</td>
+                                        <td>Darowizna</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.</td>
+                                        <td>Inne</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2">SUMA WYDATKÓW</td>
+                                        <td>0 PLN</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </section>
+                    </section>
+                    <footer>
+                        <div id="balanceSummary">
+                            <img src="./obrazki/account_balance.png" alt="wallet icon">
+                            <h2>Bilans: 1 PLN</h2>
+                        </div>
+                        <p>Gratulacje. świetnie zarządzasz finansami!</p>
+                        <div class="footerSpacing"></div>
+                        <h2>Diagram wydatków za wybrany okres</h2>
+                        <h2>[Miejsce na Diagram]</h2>
+                    </footer>
+                </section>
+            </section>
+        </form>
+</body>
+</main>
+
+</html>
