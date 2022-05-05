@@ -1150,4 +1150,9 @@ div#balanceSummary {
         padding-left: 1rem;
     }
 
+    /* Registry Panel */
+
+    section.registrySpace {
+        max-width: 90%;
+    }
 }
