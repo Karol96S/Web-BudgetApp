@@ -368,6 +368,7 @@ div#loginMainText {
     border-color: rgb(184, 184, 184);
     padding-left: 10%;
     padding-right: 10%;
+    margin: 0;
 }
 
 #toolbar button {
@@ -417,8 +418,9 @@ div#loginMainText {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 3%;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,7 +464,7 @@ p.stepByStep {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 2%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -609,7 +611,7 @@ label.categoryOfExpense {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 2%;
     width: 100%;
     height: 748px;
     display: flex;
@@ -992,6 +994,7 @@ div#balanceSummary {
         justify-content: center;
         align-content: center;
         justify-items: center;
+        padding-top: 5%;
     }
 
     .expenseMenu h2 {
@@ -1082,7 +1085,7 @@ div#balanceSummary {
     /* incomes menu */
 
     section.income {
-        padding-top: 2rem;
+        padding-top: 5%;
         align-self: flex-start;
         justify-content: flex-start;
         align-content: center;
@@ -1214,6 +1217,12 @@ div#balanceSummary {
         height: 50%;
         padding: 10px;
         margin-top: 0.25rem;
+    }
+
+    /* Home Page below */
+
+    section.listOfSteps {
+        padding-top: 8%;
     }
 
 
