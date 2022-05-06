@@ -755,6 +755,7 @@ section.upperPanel {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
     width: 68%;
     height: auto;
     background-color: #9c1212;
@@ -773,7 +774,7 @@ section.upperPanel {
 }
 
 select {
-    width: 20%;
+    width: 25%;
     height: 5%;
     color: rgb(63, 63, 63);
     background-color: white;
@@ -984,10 +985,38 @@ div#balanceSummary {
 
 /* small resolutions devices support */
 
+@media (max-width: 1650px) {
+
+    /* date button */
+
+    section.upperPanel select#date {
+        width: 25%;
+    }
+    
+}
+
+@media (max-width: 1450px) {
+
+    /* date button */
+
+    section.upperPanel {
+        width: 88%;
+        padding: 3% 3% 3% 3%;
+        flex-direction: column;
+    }
+
+    section.upperPanel select#date {
+        width: 40%;
+        margin-top: 0.6rem;
+    }
+    
+}
+
 @media (max-width: 700px){
 
 /* Toolbar */
  
+
 
 /* expenses menu */
     section.expense {
@@ -1225,6 +1254,34 @@ div#balanceSummary {
         padding-top: 8%;
     }
 
+    /* Balance Sheet below */
 
+    section.incomesExpensesTableContainer {
+        width: 95%;
+        margin: 2;
+    }
+
+    section.upperPanel {
+        width: 88%;
+        padding: 3% 3% 3% 3%;
+        flex-direction: column;
+    }
+
+    table#incomesTable, table#expensesTable {
+        width: 91%;
+    }
+
+    #incomesTable tbody > th, #expensesTable tbody > th {
+        font-size: 5rem;
+    }
+
+    section.upperPanel h2 {
+        text-align: center;
+    }
+
+    section.upperPanel select#date {
+        width: 65%;
+        margin-top: 0.6rem;
+    }
 
 }
