@@ -155,7 +155,6 @@ ul li::marker {
 
 .bottomContent>div>p {
     font-size: 1.4rem;
-    margin-top: 0rem 4rem 1rem 4rem;
 }
 
 .authorsThoughts {
@@ -277,6 +276,10 @@ div.info>img {
     height: 1.5rem;
     padding: 0;
     width: 10%;
+}
+
+input:focus {
+    background-color:rgba(223, 222, 164, 0.13);
 }
 
 div.info>input {
@@ -531,6 +534,7 @@ div.expenseAndIncomeInfo {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
     padding: 0.5rem 6rem 0.5rem 1rem;
 }
 
@@ -542,7 +546,7 @@ label#retirement {
 .expenseMenu input {
     height: 1.4rem;
     width: 60%;
-    padding: 2px 1px 2px 1px;
+    padding: 2px 1px 2px 5px;
     border-width: 2px;
     border-radius: 5px;
     border-color: grey;
@@ -675,7 +679,7 @@ legend#categoryIncomeMenu {
 .incomeMenu input {
     height: 1.4rem;
     width: 60%;
-    padding: 2px 1px 2px 1px;
+    padding: 2px 1px 2px 5px;
     margin: 0;
     border-width: 2px;
     border-radius: 5px;
@@ -1258,7 +1262,7 @@ div#balanceSummary {
 
     section.incomesExpensesTableContainer {
         width: 95%;
-        margin: 2;
+        margin: 2%;
     }
 
     section.upperPanel {
