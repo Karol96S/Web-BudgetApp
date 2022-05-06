@@ -4,6 +4,20 @@ body {
     margin: 0;
 }
 
+/* hide scroll bar */
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+/* scroll bar is hidden */
+
 html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./obrazki/Money_and_Financial_Data_-_Finance_Concept.jpg');
 }
@@ -42,8 +56,6 @@ div#citation {
 header {
     display: flex;
     background-color: #0b1826;
-    /*black jest lepszy?*/
-    /* rgb(31, 30, 30); */
     flex-direction: column;
 }
 
@@ -143,7 +155,6 @@ ul li::marker {
 
 .bottomContent>div>p {
     font-size: 1.4rem;
-    margin-top: 0rem 4rem 1rem 4rem;
 }
 
 .authorsThoughts {
@@ -212,7 +223,7 @@ button:hover {
     background-color: rgb(22, 85, 85);
 }
 
-/*od tad zaczynaja sie zmiany dla Registry */
+/* Registry panel below */
 .registrySpace {
     background-color: #eeeeee;
     display: flex;
@@ -265,6 +276,10 @@ div.info>img {
     height: 1.5rem;
     padding: 0;
     width: 10%;
+}
+
+input:focus {
+    background-color:rgba(223, 222, 164, 0.13);
 }
 
 div.info>input {
@@ -350,11 +365,13 @@ div#loginMainText {
     justify-content: center;
     justify-self: center;
     color: white;
-    background-image: linear-gradient(to top, #0b1826, #152130, #1f2b3a, #293544, #333f4f);    border: solid;
+    background-image: linear-gradient(to top, #0b1826, #152130, #1f2b3a, #293544, #333f4f);    
+    border: solid;
     border-width: 1px 0 0 0;
     border-color: rgb(184, 184, 184);
     padding-left: 10%;
     padding-right: 10%;
+    margin: 0;
 }
 
 #toolbar button {
@@ -404,8 +421,9 @@ div#loginMainText {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 3%;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,10 +435,7 @@ div#loginMainText {
     height: auto;
     margin-bottom: 5rem;
     margin-top: 0rem;
-    /*border-radius: 5px;*/
     border-color: black;
-    /*border: solid;*/
-    /*border-width: 2px;*/
 }
 
 .listOfSteps img {
@@ -452,9 +467,10 @@ p.stepByStep {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 2%;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -462,6 +478,7 @@ p.stepByStep {
 .expenseMenu {
     background-color: rgb(238, 238, 238);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 1rem;
     border-radius: 5px;
@@ -513,8 +530,11 @@ legend#category {
 
 div.expenseAndIncomeInfo {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     padding: 0.5rem 6rem 0.5rem 1rem;
 }
 
@@ -526,7 +546,7 @@ label#retirement {
 .expenseMenu input {
     height: 1.4rem;
     width: 60%;
-    padding: 2px 1px 2px 1px;
+    padding: 2px 1px 2px 5px;
     border-width: 2px;
     border-radius: 5px;
     border-color: grey;
@@ -574,6 +594,7 @@ label.categoryOfExpense {
 
 .expense .buttons > nav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: right;
 }
@@ -594,7 +615,7 @@ label.categoryOfExpense {
     background-attachment: fixed;
     background-position: center;
     margin-top: 0;
-    padding-top: 1.1%;
+    padding-top: 2%;
     width: 100%;
     height: 748px;
     display: flex;
@@ -658,7 +679,7 @@ legend#categoryIncomeMenu {
 .incomeMenu input {
     height: 1.4rem;
     width: 60%;
-    padding: 2px 1px 2px 1px;
+    padding: 2px 1px 2px 5px;
     margin: 0;
     border-width: 2px;
     border-radius: 5px;
@@ -733,14 +754,12 @@ label.categoryOfIncome {
 }
 
 section.upperPanel {
-    /*background-image: url(./obrazki/dark\ wood.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-image: linear-gradient(to bottom, #2b66a4, #25548f, #1e427b, #173167, #0f2153);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    align-items: center;
     width: 68%;
     height: auto;
     background-color: #9c1212;
@@ -759,7 +778,7 @@ section.upperPanel {
 }
 
 select {
-    width: 20%;
+    width: 25%;
     height: 5%;
     color: rgb(63, 63, 63);
     background-color: white;
@@ -968,4 +987,305 @@ div#balanceSummary {
     justify-content: center;
 }
 
+/* small resolutions devices support */
 
+@media (max-width: 1650px) {
+
+    /* date button */
+
+    section.upperPanel select#date {
+        width: 25%;
+    }
+    
+}
+
+@media (max-width: 1450px) {
+
+    /* date button */
+
+    section.upperPanel {
+        width: 88%;
+        padding: 3% 3% 3% 3%;
+        flex-direction: column;
+    }
+
+    section.upperPanel select#date {
+        width: 40%;
+        margin-top: 0.6rem;
+    }
+    
+}
+
+@media (max-width: 700px){
+
+/* Toolbar */
+ 
+
+
+/* expenses menu */
+    section.expense {
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        padding-top: 5%;
+    }
+
+    .expenseMenu h2 {
+        flex-wrap: wrap;
+        width: fit-content;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        align-content: center;
+    }
+
+    div.expenseMenu {
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    div.expenseAndIncomeInfo {
+        flex-direction: column;
+        align-self: center;
+        padding-right: 1rem;
+    }
+
+    div.singleExpenseTypeSection {
+        width: 10rem;
+        display: flex;
+        flex-direction: row;
+        padding: 0.1rem;
+        align-items: center;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    div.singlePaymentsMethodsSection {
+        width: 10rem;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    label.paymentMethods {
+        padding-left: 1rem;
+    }
+
+    legend#category {
+        justify-content: center;
+        align-self: center;
+        margin: 1rem 0 0.3rem 0;
+    }
+
+    legend {
+        justify-content: center;
+        align-self: center;
+        margin: 1rem 0 0.3rem 0;
+    }
+
+    input[type="radio"] {
+        margin: 0;
+    }
+
+    input#comment, input#date, input#ExpenseAmount {
+        width: 100%;
+    }
+
+    .expense .positiveLogin {
+        margin: 0;
+        width: 40%;
+        font-size: inherit;
+    }
+
+    .expense .negative {
+        margin: 0 0 0 5px;
+        width: 30%;
+        font-size: inherit;
+    }
+
+    .expense .buttons > nav {
+        width: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* incomes menu */
+
+    section.income {
+        padding-top: 5%;
+        align-self: flex-start;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .incomeMenu h2 {
+        flex-wrap: wrap;
+        width: fit-content;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        align-content: center;
+    }
+
+    legend#categoryIncomeMenu {
+        justify-content: center;
+        align-self: center;
+        margin: 1rem 0 0.3rem 0;
+        padding-top: 0;
+    }
+
+    div.incomeMenu {
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .income button.positiveLogin {
+        margin: 0;
+        width: 40%;
+        font-size: inherit;
+        margin: 0;
+    }
+
+    .income button.negative {
+        flex-wrap: wrap;
+        margin: 0 0 0 5px;
+        width: 30%;
+        font-size: inherit;
+    }
+
+
+    .income .buttons > nav {
+        width: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .income div.expenseAndIncomeInfo {
+        padding-bottom: 0.5rem;
+    }
+
+    div.singleIncomeTypeSection {
+        width: 10rem;
+        display: flex;
+        flex-direction: row;
+        padding: 0.1rem;
+        align-items: center;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+
+    /* Registry Panel */
+
+    section.registrySpace {
+        max-width: 90%;
+    }
+
+    /* Main Page */
+
+    div#logo {
+        justify-self: center;
+        padding: 1rem;
+    }
+
+    div#logo {
+        width:auto;
+    }
+
+    div#citation {
+        justify-self: center;
+        padding: 1rem;
+    }
+
+    div.authorsThoughts {
+        width: 95%;
+        height: auto;
+    }
+
+    div.authorsThoughts > h4 {
+        text-align: center;
+    }
+
+
+    div.authorsThoughts > p {
+        text-align: center;
+    }
+
+    nav {
+        max-width: 95%;
+        margin-bottom: 3rem;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+    }
+
+    nav>div {
+        width: 5%;
+    }
+
+    section.login, section.register {
+        width: 95%;
+        font-size: inherit;
+    }
+
+    .login p, .register p {
+        width: 98%;
+        margin: 0;
+    }
+
+    button#registerButton, button#loginButton {
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        margin-top: 0.25rem;
+    }
+
+    /* Home Page below */
+
+    section.listOfSteps {
+        padding-top: 8%;
+    }
+
+    /* Balance Sheet below */
+
+    section.incomesExpensesTableContainer {
+        width: 95%;
+        margin: 2%;
+    }
+
+    section.upperPanel {
+        width: 88%;
+        padding: 3% 3% 3% 3%;
+        flex-direction: column;
+    }
+
+    table#incomesTable, table#expensesTable {
+        width: 91%;
+    }
+
+    #incomesTable tbody > th, #expensesTable tbody > th {
+        font-size: 5rem;
+    }
+
+    section.upperPanel h2 {
+        text-align: center;
+    }
+
+    section.upperPanel select#date {
+        width: 65%;
+        margin-top: 0.6rem;
+    }
+
+}

@@ -59,94 +59,98 @@
                             <input type="number" id="ExpenseAmount" placeholder="Podaj kwotę w PLN" required>
                         </div>
                         <div class="expenseAndIncomeInfo">
-                            <label for="">Data:</label>
-                            <input type="date" id="date" placeholder="Data" required>
+                            <label for="date">Data:</label>
+                            <input type="date" id="date" required>
                         </div>
                         <div class="expenseAndIncomeInfo">
                             <legend>Sposób płatności:</legend>
-                                <div class="singlePaymentsMethodsSection">
-                                    <input type="radio" id="gotowka" name="paymentMethods" value="gotowka" required>
-                                    <label for="gotowka" class="paymentMethods">Gotówka</label>
-                                </div>
-                                <div class="singlePaymentsMethodsSection">
-                                    <input type="radio" id="kartaDebetowa" name="paymentMethods" value="kartaDebetowa">
-                                    <label for="kartaDebetowa" class="paymentMethods">Karta Debetowa</label>
-                                </div>
-                                <div class="singlePaymentsMethodsSection">
-                                    <input type="radio" id="kartaKredytowa" name="paymentMethods" value="kartaKredytowa">
-                                    <label for="kartaKredytowa" class="paymentMethods">Karta Kredytowa</label>
-                                </div>
+                            <div class="singlePaymentsMethodsSection">
+                                <input type="radio" id="gotowka" name="paymentMethods" value="gotowka" required>
+                                <label for="gotowka" class="paymentMethods">Gotówka</label>
+                            </div>
+                            <div class="singlePaymentsMethodsSection">
+                                <input type="radio" id="kartaDebetowa" name="paymentMethods" value="kartaDebetowa">
+                                <label for="kartaDebetowa" class="paymentMethods">Karta Debetowa</label>
+                            </div>
+                            <div class="singlePaymentsMethodsSection">
+                                <input type="radio" id="kartaKredytowa" name="paymentMethods" value="kartaKredytowa">
+                                <label for="kartaKredytowa" class="paymentMethods">Karta Kredytowa</label>
+                            </div>
                         </div>
                         <div class="expenseAndIncomeInfo">
                             <legend id="category">Kategoria:</legend>
-                                <section class="typeOfExpense">
+                            <section class="typeOfExpense">
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="jedzenie" name="categoryOfExpense" value="jedzenie" required>
-                            <label for="jedzenie" class="categoryOfExpense">Jedzenie</label>
+                                    <input type="radio" id="jedzenie" name="categoryOfExpense" value="jedzenie"
+                                        required>
+                                    <label for="jedzenie" class="categoryOfExpense">Jedzenie</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="mieszkanie" name="categoryOfExpense" value="mieszkanie">
-                            <label for="mieszkanie" class="categoryOfExpense">Mieszkanie</label>
+                                    <input type="radio" id="mieszkanie" name="categoryOfExpense" value="mieszkanie">
+                                    <label for="mieszkanie" class="categoryOfExpense">Mieszkanie</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="transport" name="categoryOfExpense" value="transport">
-                            <label for="transport" class="categoryOfExpense">Transport</label>
+                                    <input type="radio" id="transport" name="categoryOfExpense" value="transport">
+                                    <label for="transport" class="categoryOfExpense">Transport</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="telekomunikacja" name="categoryOfExpense" value="telekomunikacja">
-                            <label for="telekomunikacja" class="categoryOfExpense">Telekomunikacja</label>
+                                    <input type="radio" id="telekomunikacja" name="categoryOfExpense"
+                                        value="telekomunikacja">
+                                    <label for="telekomunikacja" class="categoryOfExpense">Telekomunikacja</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="opiekaZdrowotna" name="categoryOfExpense" value="opiekaZdrowotna">
-                            <label for="opiekaZdrowotna" class="categoryOfExpense">Opieka Zdrowotna</label>
+                                    <input type="radio" id="opiekaZdrowotna" name="categoryOfExpense"
+                                        value="opiekaZdrowotna">
+                                    <label for="opiekaZdrowotna" class="categoryOfExpense">Opieka Zdrowotna</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="ubranie" name="categoryOfExpense" value="ubranie">
-                            <label for="ubranie" class="categoryOfExpense">Ubranie</label>
+                                    <input type="radio" id="ubranie" name="categoryOfExpense" value="ubranie">
+                                    <label for="ubranie" class="categoryOfExpense">Ubranie</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="higiena" name="categoryOfExpense" value="higiena">
-                            <label for="higiena" class="categoryOfExpense">Higiena</label>
+                                    <input type="radio" id="higiena" name="categoryOfExpense" value="higiena">
+                                    <label for="higiena" class="categoryOfExpense">Higiena</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="dzieci" name="categoryOfExpense" value="dzieci">
-                            <label for="dzieci" class="categoryOfExpense">Dzieci</label>
+                                    <input type="radio" id="dzieci" name="categoryOfExpense" value="dzieci">
+                                    <label for="dzieci" class="categoryOfExpense">Dzieci</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="rozrywka" name="categoryOfExpense" value="rozrywka">
-                            <label for="rozrywka" class="categoryOfExpense">Rozrywka</label>
+                                    <input type="radio" id="rozrywka" name="categoryOfExpense" value="rozrywka">
+                                    <label for="rozrywka" class="categoryOfExpense">Rozrywka</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="wycieczka" name="categoryOfExpense" value="wycieczka">
-                            <label for="wycieczka" class="categoryOfExpense">Wycieczka</label>
+                                    <input type="radio" id="wycieczka" name="categoryOfExpense" value="wycieczka">
+                                    <label for="wycieczka" class="categoryOfExpense">Wycieczka</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="szkolenia" name="categoryOfExpense" value="szkolenia">
-                            <label for="szkolenia" class="categoryOfExpense">Szkolenia</label>
+                                    <input type="radio" id="szkolenia" name="categoryOfExpense" value="szkolenia">
+                                    <label for="szkolenia" class="categoryOfExpense">Szkolenia</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="ksiazki" name="categoryOfExpense" value="ksiazki">
-                            <label for="ksiazki" class="categoryOfExpense">Książki</label>
+                                    <input type="radio" id="ksiazki" name="categoryOfExpense" value="ksiazki">
+                                    <label for="ksiazki" class="categoryOfExpense">Książki</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="oszczednosci" name="categoryOfExpense" value="oszczednosci">
-                            <label for="oszczednosci" class="categoryOfExpense">Oszczędności</label>
+                                    <input type="radio" id="oszczednosci" name="categoryOfExpense" value="oszczednosci">
+                                    <label for="oszczednosci" class="categoryOfExpense">Oszczędności</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="emerytura" name="categoryOfExpense" value="emerytura">
-                            <label for="emerytura" class="categoryOfExpense" id="retirement">Na złotą jesień, czyli emeryturę</label>
+                                    <input type="radio" id="emerytura" name="categoryOfExpense" value="emerytura">
+                                    <label for="emerytura" class="categoryOfExpense" id="retirement">Na złotą jesień,
+                                        czyli emeryturę</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="dlugi" name="categoryOfExpense" value="dlugi">
-                            <label for="dlugi" class="categoryOfExpense">Spłata Długów</label>
+                                    <input type="radio" id="dlugi" name="categoryOfExpense" value="dlugi">
+                                    <label for="dlugi" class="categoryOfExpense">Spłata Długów</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="darowizna" name="categoryOfExpense" value="darowizna">
-                            <label for="darowizna" class="categoryOfExpense">Darowizna</label>
+                                    <input type="radio" id="darowizna" name="categoryOfExpense" value="darowizna">
+                                    <label for="darowizna" class="categoryOfExpense">Darowizna</label>
                                 </div>
                                 <div class="singleExpenseTypeSection">
-                            <input type="radio" id="inne" name="categoryOfExpense" value="inne">
-                            <label for="inne" class="categoryOfExpense">Inne Wydatki</label>
+                                    <input type="radio" id="inne" name="categoryOfExpense" value="inne">
+                                    <label for="inne" class="categoryOfExpense">Inne Wydatki</label>
                                 </div>
                             </section>
                         </div>
@@ -160,10 +164,11 @@
                                 <button class="negative">&#60;&#60; Wróć</button>
                             </nav>
                         </div>
+                    </div>
                 </section>
             </section>
         </form>
+    </main>
 </body>
-</main>
 
 </html>
